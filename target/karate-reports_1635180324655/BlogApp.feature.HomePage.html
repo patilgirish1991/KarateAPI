@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>BlogApp.feature.HomePage</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-10-25 10:04:12 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Get all tags</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:9]"><span>[2:9]</span> <span>Get 10 articles from Home Page</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:16]"><span>[3:16]</span> <span>Get 5 articles from Home page</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">BlogApp/feature/HomePage.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test for the home page</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Get all tags</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>527</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/api/tags&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">22:04:11.769 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">523</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">22:04:12.268 request:
+1 &gt; GET http://localhost:3000/api/tags
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:04:12.351 response time in milliseconds: 77
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 88
+1 &lt; ETag: W/&quot;58-esParwhvQjJefhXeLNR7yQ&quot;
+1 &lt; Date: Mon, 25 Oct 2021 16:34:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;tags&quot;:[&quot;tag123&quot;,&quot;Tag11&quot;,&quot;Tag Test&quot;,&quot;Tag1&quot;,&quot;Tag2&quot;,&quot;Tag3&quot;,&quot;tag4&quot;,&quot;tag 5&quot;,&quot;tag6&quot;,&quot;tag8&quot;]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:9]</span>
+                <span class="scenario-name">Get 10 articles from Home Page</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>570</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>param limit = 10</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:04:11.768 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>param offset = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/api/articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">565</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">22:04:12.268 request:
+1 &gt; GET http://localhost:3000/api/articles?offset=0&amp;limit=10
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:04:12.408 response time in milliseconds: 138
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 3792
+1 &lt; ETag: W/&quot;ed0-hlEMoWZrlA4dNdZqBhP4Ew&quot;
+1 &lt; Date: Mon, 25 Oct 2021 16:34:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;test-article-6-43t2b&quot;,&quot;title&quot;:&quot;Test Article 7&quot;,&quot;description&quot;:&quot;Test art 6&quot;,&quot;body&quot;:&quot;Test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:11:02.746Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:11:36.598Z&quot;,&quot;tagList&quot;:[&quot;tag6&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-6-q5z3p2&quot;,&quot;title&quot;:&quot;Test Article 6 &quot;,&quot;description&quot;:&quot;Test art 6&quot;,&quot;body&quot;:&quot;Test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:11:01.885Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:11:01.885Z&quot;,&quot;tagList&quot;:[&quot;tag6&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-5-wzldjt&quot;,&quot;title&quot;:&quot;Test Article 5 &quot;,&quot;description&quot;:&quot;Test art 5&quot;,&quot;body&quot;:&quot;test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:10:45.183Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:10:45.183Z&quot;,&quot;tagList&quot;:[&quot;tag 5&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-5-qix3kh&quot;,&quot;title&quot;:&quot;Test Article 8&quot;,&quot;description&quot;:&quot;Test art 8&quot;,&quot;body&quot;:&quot;test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:10:44.349Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:12:02.708Z&quot;,&quot;tagList&quot;:[&quot;tag8&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-4-cdsjzt&quot;,&quot;title&quot;:&quot;Test Article 4&quot;,&quot;description&quot;:&quot;test art 4&quot;,&quot;body&quot;:&quot;test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:10:17.994Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:10:17.994Z&quot;,&quot;tagList&quot;:[&quot;tag4&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-3-ahvrun&quot;,&quot;title&quot;:&quot;Test Article 3&quot;,&quot;description&quot;:&quot;art 3&quot;,&quot;body&quot;:&quot;test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:07:15.758Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:07:15.758Z&quot;,&quot;tagList&quot;:[&quot;Tag3&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;article-test-2-s40u7r&quot;,&quot;title&quot;:&quot;Article Test 2&quot;,&quot;description&quot;:&quot;test art2&quot;,&quot;body&quot;:&quot;test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:06:45.752Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:06:45.752Z&quot;,&quot;tagList&quot;:[&quot;Tag2&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;article-1--z55o62&quot;,&quot;title&quot;:&quot;Article 1 &quot;,&quot;description&quot;:&quot;Test article 1 &quot;,&quot;body&quot;:&quot;test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:06:05.174Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:06:05.174Z&quot;,&quot;tagList&quot;:[&quot;Tag1&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;hello-world-java-tnl35k&quot;,&quot;title&quot;:&quot;Hello World Java&quot;,&quot;description&quot;:&quot;test java&quot;,&quot;body&quot;:&quot;hello world java test &quot;,&quot;createdAt&quot;:&quot;2021-10-25T15:51:56.306Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T15:51:56.306Z&quot;,&quot;tagList&quot;:[&quot;tag123&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-lc01rn&quot;,&quot;title&quot;:&quot;Test Article &quot;,&quot;description&quot;:&quot;test&quot;,&quot;body&quot;:&quot;test article&quot;,&quot;createdAt&quot;:&quot;2021-10-25T15:51:21.087Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T15:51:21.087Z&quot;,&quot;tagList&quot;:[&quot;Tag Test&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:12}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:16]</span>
+                <span class="scenario-name">Get 5 articles from Home page</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>572</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {limit:5, offset:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">100</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">22:04:11.769 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/api/articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">470</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">22:04:12.268 request:
+1 &gt; GET http://localhost:3000/api/articles?offset=0&amp;limit=5
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:04:12.410 response time in milliseconds: 141
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1910
+1 &lt; ETag: W/&quot;776-/vy+fXq7YzNdbgYo0IXXjQ&quot;
+1 &lt; Date: Mon, 25 Oct 2021 16:34:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;test-article-6-43t2b&quot;,&quot;title&quot;:&quot;Test Article 7&quot;,&quot;description&quot;:&quot;Test art 6&quot;,&quot;body&quot;:&quot;Test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:11:02.746Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:11:36.598Z&quot;,&quot;tagList&quot;:[&quot;tag6&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-6-q5z3p2&quot;,&quot;title&quot;:&quot;Test Article 6 &quot;,&quot;description&quot;:&quot;Test art 6&quot;,&quot;body&quot;:&quot;Test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:11:01.885Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:11:01.885Z&quot;,&quot;tagList&quot;:[&quot;tag6&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-5-wzldjt&quot;,&quot;title&quot;:&quot;Test Article 5 &quot;,&quot;description&quot;:&quot;Test art 5&quot;,&quot;body&quot;:&quot;test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:10:45.183Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:10:45.183Z&quot;,&quot;tagList&quot;:[&quot;tag 5&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-5-qix3kh&quot;,&quot;title&quot;:&quot;Test Article 8&quot;,&quot;description&quot;:&quot;Test art 8&quot;,&quot;body&quot;:&quot;test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:10:44.349Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:12:02.708Z&quot;,&quot;tagList&quot;:[&quot;tag8&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test-article-4-cdsjzt&quot;,&quot;title&quot;:&quot;Test Article 4&quot;,&quot;description&quot;:&quot;test art 4&quot;,&quot;body&quot;:&quot;test desc&quot;,&quot;createdAt&quot;:&quot;2021-10-25T16:10:17.994Z&quot;,&quot;updatedAt&quot;:&quot;2021-10-25T16:10:17.994Z&quot;,&quot;tagList&quot;:[&quot;tag4&quot;],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;patilgirish1991&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:12}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,870 @@
+20:26:52.940 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:26:54.255 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+20:26:54.256 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:26:54.659 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+20:26:54.659 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:26:55.124 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 461
+1 < 200
+1 < Date: Mon, 25 Oct 2021 14:56:55 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1635126994
+1 < vary: Origin, Accept-Encoding
+1 < access-control-allow-credentials: true
+1 < cache-control: max-age=43200
+1 < pragma: no-cache
+1 < expires: -1
+1 < x-content-type-options: nosniff
+1 < etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 18053
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=aYIgAvwjNsmYUedm31pBoynN1kbXboHMuPGo0q2lmt26cGMAyPJVbSUuqFLIPnmHTnMqD6gYk0MlMyZkb4rZkLDou7g2Pgs4mSCOOCn7kxvD032pA20DJjRp3gSUVmpgqOhGnZpiCb4NnJt2tjgr"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6a3c4b5ccb9d6ebf-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+20:26:55.151 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+20:26:55.246 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 94
+2 < 200
+2 < Date: Mon, 25 Oct 2021 14:56:55 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < x-ratelimit-limit: 1000
+2 < x-ratelimit-remaining: 999
+2 < x-ratelimit-reset: 1632954590
+2 < vary: Origin, Accept-Encoding
+2 < access-control-allow-credentials: true
+2 < cache-control: max-age=43200
+2 < pragma: no-cache
+2 < expires: -1
+2 < x-content-type-options: nosniff
+2 < etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 6618
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=aDjbWC3G4czEX0QeLYO3nD7KJbacUeNHQiaLFQgVtRri6KMCH0eHv5OEKTQXjLWnO%2FiLmIekbORCz7ax4RW%2BfpTn8YruYhY5XaM6AdYop%2FXlSMnNx28PMcBfAp1UngX%2BXbPzGbQ2DnGWOlHDARZp"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 6a3c4b5da9c86e8b-BOM
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+20:26:55.605 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 944
+1 < 201
+1 < Date: Mon, 25 Oct 2021 14:56:56 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1635173854
+1 < vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < access-control-allow-credentials: true
+1 < cache-control: no-cache
+1 < pragma: no-cache
+1 < expires: -1
+1 < access-control-expose-headers: Location
+1 < location: http://jsonplaceholder.typicode.com/users/11
+1 < x-content-type-options: nosniff
+1 < etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=p7zw26VhEWU1j9%2BBSNt5a5UZyzvbGbFsT5o7Aij0TNA3SXxVRbcso7oXCY%2FVSlrb%2B8z2Q%2B8JxPmzPgDrX%2FlFKC%2F2KZ7xeXk358GMwge83MqZRTrJp9EGTUtjLlIjs8noU2zz8nIUS7Co%2B%2B%2BgNs4s"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6a3c4b5cd8a56eb6-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+20:26:55.612 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+20:26:56.548 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+21:28:10.058 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:28:10.068 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1635177490067
+21:33:05.936 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:33:09.031 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:33:09.692 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:33:09.802 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 104
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 38
+1 < ETag: W/"26-X1dEzVfJxIjA9I2JE/LAHw"
+1 < Date: Mon, 25 Oct 2021 16:03:09 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test"]}
+21:33:10.883 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:BlogApp/feature/HomePage.feature
+21:55:25.048 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:55:25.058 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1635179125057
+21:55:27.979 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:55:27.979 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:55:28.638 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:55:28.638 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?limit=10&offset=0
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:55:28.747 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 104
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 88
+1 < ETag: W/"58-esParwhvQjJefhXeLNR7yQ"
+1 < Date: Mon, 25 Oct 2021 16:25:28 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test","Tag1","Tag2","Tag3","tag4","tag 5","tag6","tag8"]}
+21:55:28.770 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 131
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 3792
+1 < ETag: W/"ed0-hlEMoWZrlA4dNdZqBhP4Ew"
+1 < Date: Mon, 25 Oct 2021 16:25:28 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-3-ahvrun","title":"Test Article 3","description":"art 3","body":"test desc","createdAt":"2021-10-25T16:07:15.758Z","updatedAt":"2021-10-25T16:07:15.758Z","tagList":["Tag3"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-test-2-s40u7r","title":"Article Test 2","description":"test art2","body":"test desc","createdAt":"2021-10-25T16:06:45.752Z","updatedAt":"2021-10-25T16:06:45.752Z","tagList":["Tag2"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-1--z55o62","title":"Article 1 ","description":"Test article 1 ","body":"test desc","createdAt":"2021-10-25T16:06:05.174Z","updatedAt":"2021-10-25T16:06:05.174Z","tagList":["Tag1"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"hello-world-java-tnl35k","title":"Hello World Java","description":"test java","body":"hello world java test ","createdAt":"2021-10-25T15:51:56.306Z","updatedAt":"2021-10-25T15:51:56.306Z","tagList":["tag123"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-lc01rn","title":"Test Article ","description":"test","body":"test article","createdAt":"2021-10-25T15:51:21.087Z","updatedAt":"2021-10-25T15:51:21.087Z","tagList":["Tag Test"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":12}
+21:55:29.926 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:BlogApp/feature/HomePage.feature
+21:59:24.139 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:59:24.148 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1635179364148
+21:59:27.302 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:59:27.300 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:59:28.026 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=10
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:59:28.027 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:59:28.170 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 138
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 88
+1 < ETag: W/"58-esParwhvQjJefhXeLNR7yQ"
+1 < Date: Mon, 25 Oct 2021 16:29:28 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test","Tag1","Tag2","Tag3","tag4","tag 5","tag6","tag8"]}
+21:59:28.235 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 208
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 3792
+1 < ETag: W/"ed0-hlEMoWZrlA4dNdZqBhP4Ew"
+1 < Date: Mon, 25 Oct 2021 16:29:28 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-3-ahvrun","title":"Test Article 3","description":"art 3","body":"test desc","createdAt":"2021-10-25T16:07:15.758Z","updatedAt":"2021-10-25T16:07:15.758Z","tagList":["Tag3"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-test-2-s40u7r","title":"Article Test 2","description":"test art2","body":"test desc","createdAt":"2021-10-25T16:06:45.752Z","updatedAt":"2021-10-25T16:06:45.752Z","tagList":["Tag2"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-1--z55o62","title":"Article 1 ","description":"Test article 1 ","body":"test desc","createdAt":"2021-10-25T16:06:05.174Z","updatedAt":"2021-10-25T16:06:05.174Z","tagList":["Tag1"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"hello-world-java-tnl35k","title":"Hello World Java","description":"test java","body":"hello world java test ","createdAt":"2021-10-25T15:51:56.306Z","updatedAt":"2021-10-25T15:51:56.306Z","tagList":["tag123"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-lc01rn","title":"Test Article ","description":"test","body":"test article","createdAt":"2021-10-25T15:51:21.087Z","updatedAt":"2021-10-25T15:51:21.087Z","tagList":["Tag Test"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":12}
+21:59:29.522 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:BlogApp/feature/HomePage.feature
+22:01:39.437 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:01:39.445 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1635179499444
+22:01:41.867 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:01:41.867 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+22:01:41.867 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+22:01:42.350 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags?offset=0&limit=10
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:01:42.350 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=10
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:01:42.350 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:01:42.453 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 97
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 88
+1 < ETag: W/"58-esParwhvQjJefhXeLNR7yQ"
+1 < Date: Mon, 25 Oct 2021 16:31:42 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test","Tag1","Tag2","Tag3","tag4","tag 5","tag6","tag8"]}
+22:01:42.454 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 97
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 88
+1 < ETag: W/"58-esParwhvQjJefhXeLNR7yQ"
+1 < Date: Mon, 25 Oct 2021 16:31:42 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test","Tag1","Tag2","Tag3","tag4","tag 5","tag6","tag8"]}
+22:01:42.470 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 119
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 3792
+1 < ETag: W/"ed0-hlEMoWZrlA4dNdZqBhP4Ew"
+1 < Date: Mon, 25 Oct 2021 16:31:42 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-3-ahvrun","title":"Test Article 3","description":"art 3","body":"test desc","createdAt":"2021-10-25T16:07:15.758Z","updatedAt":"2021-10-25T16:07:15.758Z","tagList":["Tag3"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-test-2-s40u7r","title":"Article Test 2","description":"test art2","body":"test desc","createdAt":"2021-10-25T16:06:45.752Z","updatedAt":"2021-10-25T16:06:45.752Z","tagList":["Tag2"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-1--z55o62","title":"Article 1 ","description":"Test article 1 ","body":"test desc","createdAt":"2021-10-25T16:06:05.174Z","updatedAt":"2021-10-25T16:06:05.174Z","tagList":["Tag1"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"hello-world-java-tnl35k","title":"Hello World Java","description":"test java","body":"hello world java test ","createdAt":"2021-10-25T15:51:56.306Z","updatedAt":"2021-10-25T15:51:56.306Z","tagList":["tag123"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-lc01rn","title":"Test Article ","description":"test","body":"test article","createdAt":"2021-10-25T15:51:21.087Z","updatedAt":"2021-10-25T15:51:21.087Z","tagList":["Tag Test"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":12}
+22:01:43.465 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:BlogApp/feature/HomePage.feature
+22:03:17.759 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:03:17.765 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1635179597765
+22:03:19.453 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:03:19.453 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+22:03:19.453 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+22:03:19.991 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=5
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:03:19.992 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:03:19.991 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=10
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:03:20.112 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 113
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 88
+1 < ETag: W/"58-esParwhvQjJefhXeLNR7yQ"
+1 < Date: Mon, 25 Oct 2021 16:33:20 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test","Tag1","Tag2","Tag3","tag4","tag 5","tag6","tag8"]}
+22:03:20.179 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 186
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1910
+1 < ETag: W/"776-/vy+fXq7YzNdbgYo0IXXjQ"
+1 < Date: Mon, 25 Oct 2021 16:33:20 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":12}
+22:03:20.184 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 190
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 3792
+1 < ETag: W/"ed0-hlEMoWZrlA4dNdZqBhP4Ew"
+1 < Date: Mon, 25 Oct 2021 16:33:20 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-3-ahvrun","title":"Test Article 3","description":"art 3","body":"test desc","createdAt":"2021-10-25T16:07:15.758Z","updatedAt":"2021-10-25T16:07:15.758Z","tagList":["Tag3"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-test-2-s40u7r","title":"Article Test 2","description":"test art2","body":"test desc","createdAt":"2021-10-25T16:06:45.752Z","updatedAt":"2021-10-25T16:06:45.752Z","tagList":["Tag2"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-1--z55o62","title":"Article 1 ","description":"Test article 1 ","body":"test desc","createdAt":"2021-10-25T16:06:05.174Z","updatedAt":"2021-10-25T16:06:05.174Z","tagList":["Tag1"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"hello-world-java-tnl35k","title":"Hello World Java","description":"test java","body":"hello world java test ","createdAt":"2021-10-25T15:51:56.306Z","updatedAt":"2021-10-25T15:51:56.306Z","tagList":["tag123"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-lc01rn","title":"Test Article ","description":"test","body":"test article","createdAt":"2021-10-25T15:51:21.087Z","updatedAt":"2021-10-25T15:51:21.087Z","tagList":["Tag Test"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":12}
+22:03:21.283 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:BlogApp/feature/HomePage.feature
+22:04:10.056 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:04:10.065 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1635179650064
+22:04:11.763 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+22:04:11.763 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:04:11.763 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+22:04:12.268 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=5
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:04:12.268 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=10
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:04:12.268 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:04:12.350 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 77
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 88
+1 < ETag: W/"58-esParwhvQjJefhXeLNR7yQ"
+1 < Date: Mon, 25 Oct 2021 16:34:12 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test","Tag1","Tag2","Tag3","tag4","tag 5","tag6","tag8"]}
+22:04:12.407 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 138
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 3792
+1 < ETag: W/"ed0-hlEMoWZrlA4dNdZqBhP4Ew"
+1 < Date: Mon, 25 Oct 2021 16:34:12 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-3-ahvrun","title":"Test Article 3","description":"art 3","body":"test desc","createdAt":"2021-10-25T16:07:15.758Z","updatedAt":"2021-10-25T16:07:15.758Z","tagList":["Tag3"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-test-2-s40u7r","title":"Article Test 2","description":"test art2","body":"test desc","createdAt":"2021-10-25T16:06:45.752Z","updatedAt":"2021-10-25T16:06:45.752Z","tagList":["Tag2"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-1--z55o62","title":"Article 1 ","description":"Test article 1 ","body":"test desc","createdAt":"2021-10-25T16:06:05.174Z","updatedAt":"2021-10-25T16:06:05.174Z","tagList":["Tag1"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"hello-world-java-tnl35k","title":"Hello World Java","description":"test java","body":"hello world java test ","createdAt":"2021-10-25T15:51:56.306Z","updatedAt":"2021-10-25T15:51:56.306Z","tagList":["tag123"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-lc01rn","title":"Test Article ","description":"test","body":"test article","createdAt":"2021-10-25T15:51:21.087Z","updatedAt":"2021-10-25T15:51:21.087Z","tagList":["Tag Test"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":12}
+22:04:12.409 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 141
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1910
+1 < ETag: W/"776-/vy+fXq7YzNdbgYo0IXXjQ"
+1 < Date: Mon, 25 Oct 2021 16:34:12 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":12}
+22:04:13.506 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:BlogApp/feature/HomePage.feature
+22:15:24.648 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:15:24.657 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1635180324655
+22:15:28.113 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+22:15:28.111 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:15:28.113 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+22:15:28.900 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=10
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:15:28.901 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:15:28.901 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=5
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:15:29.086 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 178
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 95
+1 < ETag: W/"5f-yG564oIw2TBqdsU6rqB2Fw"
+1 < Date: Mon, 25 Oct 2021 16:45:29 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test","Tag1","Tag2","Tag3","tag4","tag 5","tag6","tag8","post"]}
+22:15:29.125 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 218
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1924
+1 < ETag: W/"784-ZJkRZMHcDCR1gWUp8i8iTw"
+1 < Date: Mon, 25 Oct 2021 16:45:29 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"article-post-function-cm3bea","title":"Article Post Function","description":"Post func","body":"testaskjkl","createdAt":"2021-10-25T16:37:23.167Z","updatedAt":"2021-10-25T16:37:23.167Z","tagList":["post"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":13}
+22:15:29.128 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 227
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 3808
+1 < ETag: W/"ee0-GgpPCRliL2JK+FDYkLyacQ"
+1 < Date: Mon, 25 Oct 2021 16:45:29 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"article-post-function-cm3bea","title":"Article Post Function","description":"Post func","body":"testaskjkl","createdAt":"2021-10-25T16:37:23.167Z","updatedAt":"2021-10-25T16:37:23.167Z","tagList":["post"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-3-ahvrun","title":"Test Article 3","description":"art 3","body":"test desc","createdAt":"2021-10-25T16:07:15.758Z","updatedAt":"2021-10-25T16:07:15.758Z","tagList":["Tag3"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-test-2-s40u7r","title":"Article Test 2","description":"test art2","body":"test desc","createdAt":"2021-10-25T16:06:45.752Z","updatedAt":"2021-10-25T16:06:45.752Z","tagList":["Tag2"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-1--z55o62","title":"Article 1 ","description":"Test article 1 ","body":"test desc","createdAt":"2021-10-25T16:06:05.174Z","updatedAt":"2021-10-25T16:06:05.174Z","tagList":["Tag1"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"hello-world-java-tnl35k","title":"Hello World Java","description":"test java","body":"hello world java test ","createdAt":"2021-10-25T15:51:56.306Z","updatedAt":"2021-10-25T15:51:56.306Z","tagList":["tag123"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":13}
+22:15:30.548 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:BlogApp/feature/HomePage.feature
+22:18:02.787 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:18:02.797 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1635180482795
+22:18:05.833 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+22:18:05.833 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:18:05.833 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+22:18:06.476 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:18:06.476 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=5
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:18:06.476 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=10
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:18:06.606 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 125
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 95
+1 < ETag: W/"5f-yG564oIw2TBqdsU6rqB2Fw"
+1 < Date: Mon, 25 Oct 2021 16:48:06 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test","Tag1","Tag2","Tag3","tag4","tag 5","tag6","tag8","post"]}
+22:18:06.639 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 162
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1924
+1 < ETag: W/"784-ZJkRZMHcDCR1gWUp8i8iTw"
+1 < Date: Mon, 25 Oct 2021 16:48:06 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"article-post-function-cm3bea","title":"Article Post Function","description":"Post func","body":"testaskjkl","createdAt":"2021-10-25T16:37:23.167Z","updatedAt":"2021-10-25T16:37:23.167Z","tagList":["post"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":13}
+22:18:06.641 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 164
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 3808
+1 < ETag: W/"ee0-GgpPCRliL2JK+FDYkLyacQ"
+1 < Date: Mon, 25 Oct 2021 16:48:06 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"article-post-function-cm3bea","title":"Article Post Function","description":"Post func","body":"testaskjkl","createdAt":"2021-10-25T16:37:23.167Z","updatedAt":"2021-10-25T16:37:23.167Z","tagList":["post"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-3-ahvrun","title":"Test Article 3","description":"art 3","body":"test desc","createdAt":"2021-10-25T16:07:15.758Z","updatedAt":"2021-10-25T16:07:15.758Z","tagList":["Tag3"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-test-2-s40u7r","title":"Article Test 2","description":"test art2","body":"test desc","createdAt":"2021-10-25T16:06:45.752Z","updatedAt":"2021-10-25T16:06:45.752Z","tagList":["Tag2"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-1--z55o62","title":"Article 1 ","description":"Test article 1 ","body":"test desc","createdAt":"2021-10-25T16:06:05.174Z","updatedAt":"2021-10-25T16:06:05.174Z","tagList":["Tag1"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"hello-world-java-tnl35k","title":"Hello World Java","description":"test java","body":"hello world java test ","createdAt":"2021-10-25T15:51:56.306Z","updatedAt":"2021-10-25T15:51:56.306Z","tagList":["tag123"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":13}
+22:18:07.759 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:BlogApp/feature/HomePage.feature
+22:24:57.027 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:24:57.037 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1635180897035
+22:25:00.226 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+22:25:00.226 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+22:25:00.224 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:25:00.977 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=10
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:25:00.977 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/tags
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:25:00.977 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api/articles?offset=0&limit=5
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:25:01.113 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 129
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 95
+1 < ETag: W/"5f-yG564oIw2TBqdsU6rqB2Fw"
+1 < Date: Mon, 25 Oct 2021 16:55:01 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"tags":["tag123","Tag11","Tag Test","Tag1","Tag2","Tag3","tag4","tag 5","tag6","tag8","post"]}
+22:25:01.176 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 197
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1924
+1 < ETag: W/"784-ZJkRZMHcDCR1gWUp8i8iTw"
+1 < Date: Mon, 25 Oct 2021 16:55:01 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"article-post-function-cm3bea","title":"Article Post Function","description":"Post func","body":"testaskjkl","createdAt":"2021-10-25T16:37:23.167Z","updatedAt":"2021-10-25T16:37:23.167Z","tagList":["post"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":13}
+22:25:01.179 [pool-1-thread-3] ERROR com.intuit.karate - classpath:BlogApp/feature/HomePage.feature:23
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 197, url: http://localhost:3000/api/articles?offset=0&limit=5, response: 
+{"articles":[{"slug":"article-post-function-cm3bea","title":"Article Post Function","description":"Post func","body":"testaskjkl","createdAt":"2021-10-25T16:37:23.167Z","updatedAt":"2021-10-25T16:37:23.167Z","tagList":["post"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":13}
+classpath:BlogApp/feature/HomePage.feature:23
+22:25:01.185 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 207
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 3808
+1 < ETag: W/"ee0-GgpPCRliL2JK+FDYkLyacQ"
+1 < Date: Mon, 25 Oct 2021 16:55:01 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"articles":[{"slug":"article-post-function-cm3bea","title":"Article Post Function","description":"Post func","body":"testaskjkl","createdAt":"2021-10-25T16:37:23.167Z","updatedAt":"2021-10-25T16:37:23.167Z","tagList":["post"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-43t2b","title":"Test Article 7","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:02.746Z","updatedAt":"2021-10-25T16:11:36.598Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-6-q5z3p2","title":"Test Article 6 ","description":"Test art 6","body":"Test desc","createdAt":"2021-10-25T16:11:01.885Z","updatedAt":"2021-10-25T16:11:01.885Z","tagList":["tag6"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-wzldjt","title":"Test Article 5 ","description":"Test art 5","body":"test desc","createdAt":"2021-10-25T16:10:45.183Z","updatedAt":"2021-10-25T16:10:45.183Z","tagList":["tag 5"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-5-qix3kh","title":"Test Article 8","description":"Test art 8","body":"test desc","createdAt":"2021-10-25T16:10:44.349Z","updatedAt":"2021-10-25T16:12:02.708Z","tagList":["tag8"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-4-cdsjzt","title":"Test Article 4","description":"test art 4","body":"test desc","createdAt":"2021-10-25T16:10:17.994Z","updatedAt":"2021-10-25T16:10:17.994Z","tagList":["tag4"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"test-article-3-ahvrun","title":"Test Article 3","description":"art 3","body":"test desc","createdAt":"2021-10-25T16:07:15.758Z","updatedAt":"2021-10-25T16:07:15.758Z","tagList":["Tag3"],"favorited":false,"favoritesCount":1,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-test-2-s40u7r","title":"Article Test 2","description":"test art2","body":"test desc","createdAt":"2021-10-25T16:06:45.752Z","updatedAt":"2021-10-25T16:06:45.752Z","tagList":["Tag2"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"article-1--z55o62","title":"Article 1 ","description":"Test article 1 ","body":"test desc","createdAt":"2021-10-25T16:06:05.174Z","updatedAt":"2021-10-25T16:06:05.174Z","tagList":["Tag1"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}},{"slug":"hello-world-java-tnl35k","title":"Hello World Java","description":"test java","body":"hello world java test ","createdAt":"2021-10-25T15:51:56.306Z","updatedAt":"2021-10-25T15:51:56.306Z","tagList":["tag123"],"favorited":false,"favoritesCount":0,"author":{"username":"patilgirish1991","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false}}],"articlesCount":13}
+22:25:02.503 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:BlogApp/feature/HomePage.feature
